@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;600&family=Great+Vibes&family=Lora&family=Montserrat:wght@200;300&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>P&P</title>
+</head>
+<body>
+    <section class="head-container">
+        
+    </section>
+    <section class="date-container section">
+        <article class="date-text">
+            <h1>PERLA & PABLO</h1>
+            <h3>Nos casamos</h3>
+            <h2>04·MARZO·2023</h2>
+        </article>
+        
+    </section>
+    
+    <section class="main-container section">
+        <h2>
+            Bienvenidos a nuestra boda
+        </h2>
+        <p>Estamos muy felices de invitarte a nuestra boda civil, queremos compartir 
+            contigo este momento tan especial para nosotros.
+        </p>
+    </section>
+    <section class="section">
+        <h3>
+            <span id="days"></span>días / 
+            <span id="hours"></span>horas / 
+            <span id="minutes"></span>minutos / 
+            <span id="seconds"></span>segundos
+        </h3>
+    </section>
+    <section class="sheets">
+        <img src="images/sheet.png" alt="">
+    </section>
+    <section class="info-container section">
+        <img src="images/main_image.jpg" alt="">
+        <h2>Cuándo & Dónde </h2>
+        <h4>04·Marzo·2023</h4>
+        <h4>19:00 horas</h4>
+        <h4>Terraza El Rocío</h4>
+        <p>Felie Loza 135, La Llave, Tlaquepaque, Jal.</p>
+        <section class="button-container">
+            <div class="button">
+                <a href="https://goo.gl/maps/GnbM1s99bvvCtwya8">Ver Ubicación</a>
+            </div> 
+        </section>
+    </section>
+    <section class="story">
+        <h2>Nosotros</h2>
+        <img src="images/head_image.jpg" alt="">
+        <p>
+            El ayer es historia, el mañana es un misterio y hoy es un regalo, por eso se llama presente
+        </p>
+    </section>
+    <section class="Last section">
+        <h2>
+            Confirma tu asistencia
+        </h2>
+        <p>¡Gracias por compartir este día tan especial con nosotros!</p>
+        <p>Por favor confirma tu asistencia por WhatsApp lo más pronto posible</p>
+    </section>
+    <footer>Made with love ❤️</footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    
+     
+        const DATE_TARGET = new Date('03/04/2023 19:00');
+        const SPAN_DAYS = document.querySelector('span#days');
+        const SPAN_HOURS = document.querySelector('span#hours');
+        const SPAN_MINUTES = document.querySelector('span#minutes');
+        const SPAN_SECONDS = document.querySelector('span#seconds');
+    
+        const MILLI_OF_SECOND= 1000;
+        const MILLI_OF_MINUTE = MILLI_OF_SECOND * 60;
+        const MILLI_OF_HOUR = MILLI_OF_MINUTE * 60;
+        const MILLI_OF_DAY = MILLI_OF_HOUR * 24;
+    
+        function updateCountdown(){
+            const NOW = new Date()
+            const DURATION =DATE_TARGET - NOW;
+            const REMAINING_DAYS = Math.floor(DURATION/MILLI_OF_DAY)
+            const REMAINING_HOURS = Math.floor((DURATION%MILLI_OF_DAY)/MILLI_OF_HOUR)
+            const REMAINING_MINUTES = Math.floor((DURATION%MILLI_OF_HOUR)/MILLI_OF_MINUTE)
+            const REMAINING_SECONDS = Math.floor((DURATION%MILLI_OF_MINUTE)/MILLI_OF_SECOND)
+    
+            SPAN_DAYS.textContent = REMAINING_DAYS;
+            SPAN_HOURS.textContent = REMAINING_HOURS
+            SPAN_MINUTES.textContent = REMAINING_MINUTES
+            SPAN_SECONDS.textContent = REMAINING_SECONDS
+        }
+    
+            updateCountdown();
+    
+            setInterval(updateCountdown, MILLI_OF_SECOND)
+
+    })
+    
+    </script>
+</body>
+</html>
