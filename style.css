@@ -1,0 +1,105 @@
+body{
+    text-align: center;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.section{
+    margin: 3em auto;
+}
+
+h1{
+    font-family: 'Noto Serif', serif;
+    color: black;
+}
+h2{
+    font-family: 'Noto Serif', serif;
+    color: black;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+.head-container{
+    text-align: center;
+    background-image: url(images/head_image.jpg);
+    background-size: contain;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+}
+.main-container{
+    width: 85%;
+}
+
+.date-container{
+    background-size: auto;
+    background-position: center;
+    background-image: url(images/flowers.svg);  
+    padding: 5%;
+    }
+
+.date-text{
+    margin: 2em;
+    display: grid;
+   
+}
+.sheets{
+    width: 45%;
+    margin: auto;
+}
+.sheets img{
+    width: inherit;
+    margin: auto;
+    transform: rotate(90deg);
+}
+.info-container h2, h4{
+    margin-block-start: .55em;
+    margin-block-end: .55em;
+}
+.info-container img{
+    max-width: 85%;
+}
+.info-container p{
+    max-width: 85%;
+    margin: auto;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.2em auto;
+}
+.button{
+    background-color: #0f380d;
+    width: 42%;
+    border-radius: 5px;
+    padding: 2%;
+}
+a{
+    color: #f9f8f8;
+    text-decoration: inherit;
+}
+.story{
+    justify-content: center;
+}
+
+.story img{
+    width: 85%;
+}
+.story p{
+    margin: 1em auto 3em;
+    width: 85%;
+}
+.Last{
+    margin-bottom: 3em;
+    width: 85%;
+}
+footer{
+    background-color: #0f380d;
+    color: #f9f8f8;
+    padding: 1em;
+    margin-bottom: 0px;
+}
