@@ -22,7 +22,7 @@ h3{
 }
 .head-container{
     text-align: center;
-    background-image: url(images/head_image.jpg);
+    background-image: url(head_image.jpg);
     background-size: contain;
     align-items: center;
     background-repeat: no-repeat;
