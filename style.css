@@ -2,7 +2,7 @@ body{
     text-align: center;
     margin: 0%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
 }
 .section{
     margin: 3em auto;
@@ -10,15 +10,16 @@ body{
 
 h1{
     font-family: 'Noto Serif', serif;
-    color: black;
+    color: #25212b;
+    font-size: 2.2em;
 }
 h2{
     font-family: 'Noto Serif', serif;
-    color: black;
+    color: #25212b;
 }
 h3{
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: #25212b;
 }
 .head-container{
     text-align: center;
@@ -96,6 +97,11 @@ a{
 .Last{
     margin-bottom: 3em;
     width: 85%;
+    display: grid;
+}
+.Last button{
+    width: auto;
+    padding: .3em 2em;
 }
 footer{
     background-color: #0f380d;
