@@ -45,7 +45,9 @@ h3{
 .date-text{
     margin: 2em;
     display: grid;
-   
+}
+.gift{
+    width: 85%;
 }
 .sheets{
     width: 45%;
